@@ -14,7 +14,7 @@ public class SpringConfig {
 	@Bean
 	 public Executor taskExecutor() {
 	    ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-	    executor.setCorePoolSize(2);
+	    executor.setCorePoolSize(2); //Number max of core
 	    executor.setMaxPoolSize(3);
 	    executor.setQueueCapacity(500);
 	    executor.setThreadNamePrefix("ExampleThread-");
